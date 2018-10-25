@@ -11,6 +11,7 @@ export class AppComponent {
   b = 5;
   listo = false;
   nombre:string = '';
+  apellido:string = '';
   constructor() {
     setTimeout(() => {
       this.listo = true;
