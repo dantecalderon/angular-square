@@ -7,18 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularSquare';
-  a = 3;
-  b = 5;
-  listo = false;
-  nombre:string = '';
-  apellido:string = '';
+  lugares:any = [
+    {active: true, nombre: 'Floreria la gardenia'},
+    {active: false, nombre: 'Donas la pasadita'},
+    {active: true, nombre: 'Veterinaria'},
+    {active: true, nombre: 'Alfabetería'},
+    {active: false, nombre: 'YOutube'},
+    {active: true, nombre: 'otra cosa'}
+  ]
   constructor() {
-    setTimeout(() => {
-      this.listo = true;
-    }, 3000)
-  }
 
-  hacerAlgo() {
-    alert('Haciendo algo');
   }
 }
