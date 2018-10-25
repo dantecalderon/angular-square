@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'square';
+  title = 'AngularSquare';
+  a = 3;
+  b = 5;
+  listo = false;
+  nombre:string = '';
+  constructor() {
+    setTimeout(() => {
+      this.listo = true;
+    }, 3000)
+  }
+
+  hacerAlgo() {
+    alert('Haciendo algo');
+  }
 }
