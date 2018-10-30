@@ -7,4 +7,11 @@
     <li *ngIf="lugar.active">{{ lugar.nombre}}</li>
   </ng-container>
 </ul>
+<hr/>
+<h2>Personas</h2>
+<ul>
+  <ng-container *ngFor="let persona of personas">
+    <li *ngIf="persona.edad>=18">{{ persona.nombre}}</li>
+  </ng-container>
+</ul>
 <router-outlet></router-outlet>
