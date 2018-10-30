@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AngularSquare';
+  title = 'AngularSquare'
   lugares:any = [
     {active: true, nombre: 'Floreria la gardenia'},
     {active: false, nombre: 'Donas la pasadita'},
@@ -14,7 +14,9 @@ export class AppComponent {
     {active: true, nombre: 'Alfabetería'},
     {active: false, nombre: 'YOutube'},
     {active: true, nombre: 'otra cosa'}
-  ]
+  ];
+  lat: number = 4.6560663;
+  lng: number = -74.0595918;
   constructor() {
 
   }
