@@ -10,8 +10,8 @@
 <hr/>
 <ul>
   <ng-container *ngFor="let lugar of lugares; let i = index" [ngSwitch]="lugar.cercania">
-    <a contar-clicks>
-      <li
+    <a >
+      <li contar-clicks
         [ngStyle]="{color: (lugar.active) ? 'black': 'gray'}"
         [ngClass]="{numero_par: (i+1)%2 !== 0}"
         [resaltar]='lugar.plan'>
